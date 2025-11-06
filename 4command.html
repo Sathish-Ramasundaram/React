@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>There are some ways to create a React app</p>
+        <a href="5CRA.html">(Old tutorials / legacy code)</a><br>
+        <a href="6Vite.html">Vite (New learner)</a>
+        <br>
+        <h4>To deploy GitHub</h4>
+        <p>
+            Open package.json and add below in scripts section 
+            <br>"predeploy": "npm run build", // builds the app before deploying
+            <br>"deploy": "gh-pages -d dist" // uploads the dist folder to GitHub Pages
+            <br><br>
+            open vite.config.js and make sure it has
+            <br>
+            base: 'repository-name'<br>
+            <br>Run these commands from your project folder:
+            <br>npm install gh-pages --save-dev   (install Github pages)
+            <br>npm run build 
+            <br>npm run deploy<br>
+            <br>Enable GitHub Pages:
+            <br>go to github page.
+            go to your repo → Settings → Pages
+            <br>Under “Branch”, choose gh-pages and Save<br>
+            Wait for 1 to 2 minutes<br>
+            Then go to https://your-username.github.io/repo-name/
+        </p>
+    </body>
+</html>
